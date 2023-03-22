@@ -38,12 +38,10 @@ endif
 
 OPTEE_CLIENT_ENV_VAR += CROSS_COMPILE=
 OPTEE_CLIENT_ENV_VAR += O=$(TOP_DIR)/out/optee_client
-OPTEE_CLIENT_ENV_VAR += CFG_TEE_CLIENT_LOAD_PATH=/data/tee
 
 OPTEE_TEST_ENV_VAR += TA_DEV_KIT_DIR=${TOP_DIR}/out/optee_os/export-ta_x86_64
 OPTEE_TEST_ENV_VAR += OPTEE_CLIENT_EXPORT=${TOP_DIR}/out/optee_client/export/usr
 OPTEE_TEST_ENV_VAR += O=$(TOP_DIR)/out/optee_test
-OPTEE_TEST_ENV_VAR += TA_DIR=/data/tee/optee_armtz
 
 IKGT_ENV_VAR += BUILD_DIR=$(TOP_DIR)/out/ikgt/
 IKGT_ENV_VAR += OPTEEBIN_DIR=$(TOP_DIR)/out/optee_os/core/
